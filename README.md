@@ -7,9 +7,9 @@ BathPrice = RoomPrice / 2
 but with a minimum of 20
 ```
 ## Requirements for Playing:
-[Improved Innkeepers](https://www.nexusmods.com/skyrimspecialedition/mods/46659) (soft requirement, not actually needed but made for changing room costs)
-[Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) (hard requirement. needs a global from the mod and is made for this mod)
-[Address Library](https://www.nexusmods.com/skyrimspecialedition/mods/32444) 
+[Improved Innkeepers](https://www.nexusmods.com/skyrimspecialedition/mods/46659) (soft requirement, not actually needed but made for changing room costs)   
+[Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) (hard requirement. needs a global from the mod and is made for this mod)   
+[Address Library](https://www.nexusmods.com/skyrimspecialedition/mods/32444)    
 
 this mod only works on Skyrim 1.6.1170+
 
