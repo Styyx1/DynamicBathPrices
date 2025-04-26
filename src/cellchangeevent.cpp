@@ -32,15 +32,17 @@ namespace Events {
 		eventHolder->AddEventSink(CellChangeEvent::GetSingleton());
 		logs::info("Registered for {}", typeid(RE::TESCellFullyLoadedEvent).name());
 	}
+
+
+
 	void CellChangeEvent::AdjustGlobal()
 	{
 		std::jthread{ [=] {
-			std::this_thread::sleep_for(2.0s);
+			std::this_thread::sleep_for(3.0s);
 			SKSE::GetTaskInterface()->AddTask([=] {
 				Settings::Forms::bath_price_global->value = std::clamp(Settings::Forms::room_cost_global->value / 2.0f, 20.0f, Settings::Forms::room_cost_global->value);
 				logs::info("{} is now: {}", Settings::Forms::bath_price_global->GetFormEditorID(), Settings::Forms::bath_price_global->value);
 				});
 			}}.detach();
-	}
-	
+	}	
 }
