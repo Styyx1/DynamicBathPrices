@@ -1,6 +1,19 @@
-# CommonLibSSE Plugin Template
+# Dynamic Bath Prices 
 
-This is a basic plugin template using CommonLibSSE.
+Adjusts bath prices based on the room price. 
+formula is:
+```
+BathPrice = RoomPrice / 2
+but with a minimum of 20
+```
+## Requirements for Playing:
+[Improved Innkeepers](https://www.nexusmods.com/skyrimspecialedition/mods/46659) (soft requirement, not actually needed but made for changing room costs)   
+[Simple Inn Bath](https://www.nexusmods.com/skyrimspecialedition/mods/49014) (hard requirement. needs a global from the mod and is made for this mod)   
+[Address Library](https://www.nexusmods.com/skyrimspecialedition/mods/32444)    
+
+this mod only works on Skyrim 1.6.1170+
+
+# Building the dll
 
 ### Requirements
 * [XMake](https://xmake.io) [2.8.2+]
@@ -8,8 +21,8 @@ This is a basic plugin template using CommonLibSSE.
 
 ## Getting Started
 ```bat
-git clone --recurse-submodules https://github.com/qudix/commonlibsse-template
-cd commonlibsse-template
+git clone --recurse-submodules https://github.com/Styyx1/DynamicBathPrices
+cd DynamicBathPrices
 ```
 
 ### Build
@@ -35,12 +48,4 @@ xmake project -k vsxmake
 
 > ***Note:*** *This will generate a `vsxmakeXXXX/` directory in the **project's root directory** using the latest version of Visual Studio installed on the system.*
 
-### Upgrading Packages (Optional)
-If you want to upgrade the project's dependencies, run the following commands:
-```bat
-xmake repo --update
-xmake require --upgrade
-```
 
-## Documentation
-Please refer to the [Wiki](../../wiki/Home) for more advanced topics.
